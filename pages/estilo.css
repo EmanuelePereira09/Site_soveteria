@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    background-color: hsl(34, 50%, 95%);
+}
+h1{
+    color: black;
+}
+img{
+    height: 200px;
+    width: 200px;
+}
+img:hover{
+    height: 250px;
+    width: 250px;
+    margin: solid black;
+
+}
+.sabor1{
+    text-align: center;
+    height: 500px;
+    width: 300px;
+    background-color:hsl(34, 80%, 86%);
+    border-radius: 40%;
+    margin-left: 20%;
+    border: solid #755000;
+}

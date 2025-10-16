@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    background-color: hsl(35, 86%, 95%);
+}
+header{
+    width: 100vw;
+    height: 20vh;
+    background-color: #7e3d00;
+    animation: sei 2s linear forwards;
+}
+h1{
+    color: #fffff0;
+    font-family: "Oi", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@keyframes uau{
+    0% {right: -100px; opacity: 0;}
+    100% {right: 100px; opacity: 1;}
+}
+img{
+    height: 200px;
+    width: 200px;
+}
+img:hover{
+    height: 250px;
+    width: 250px;
+    margin: solid black;
+}
+.sabor{
+    text-decoration: none;
+    background-color: aquamarine;
+}
+
