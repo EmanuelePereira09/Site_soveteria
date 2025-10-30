@@ -12,18 +12,26 @@ img{
     height: 200px;
     width: 200px;
 }
-img:hover{
-    height: 250px;
-    width: 250px;
+#comprar:hover{
+    background-color: hsl(313, 100%, 50%);
     margin: solid black;
-
 }
 .sabor1{
     text-align: center;
     height: 500px;
     width: 300px;
     background-color:hsl(34, 80%, 86%);
-    border-radius: 40%;
+    border-radius: 1000px;
     margin-left: 20%;
     border: solid #755000;
+}
+#comprar{
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    background-color: #f789df;
+    border-radius: 100px;
+}
+#comprar h1{
+    align-items: center;
 }

@@ -3,12 +3,13 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    background-color: hsl(35, 86%, 95%);
+    background-color: hwb(35 91% 1%);
 }
-header{
+main{
+    margin-top: 5%;
     width: 100vw;
     height: 20vh;
-    background-color: #7e3d00;
+    background-color: hsl(214, 100%, 25%);
     animation: sei 2s linear forwards;
 }
 h1{
@@ -22,11 +23,11 @@ h1{
     0% {right: -100px; opacity: 0;}
     100% {right: 100px; opacity: 1;}
 }
-img{
+.morangu{
     height: 200px;
     width: 200px;
 }
-img:hover{
+.morangu:hover{
     height: 250px;
     width: 250px;
     margin: solid black;
@@ -34,5 +35,89 @@ img:hover{
 .sabor{
     text-decoration: none;
     background-color: aquamarine;
+}
+header{
+    text-align: center;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    position: fixed;
+    height: 5%;
+    width: 100%;
+    top: 0;
+    background-color: hwb(35 91% 1%);
+    padding: 10px 0;
+    margin: 0;
+}
+ul li {
+    color: black;
+    margin-right: 20px;
+
+    
+}
+ul li:hover{
+    background-color: hsl(239, 100%, 50%);
+    color: #fffff0;
+}
+#ultimo{
+    background-color: #012391;
+    width: 10%;
+    height: 70%;
+    border-radius: 25px;
+}
+a{
+    text-decoration: none;
+}
+.uni{
+    height: 100px;
+}
+/* Resetando o estilo padrão */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+/* Container principal do carrossel */
+.carrossel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Container das imagens */
+.carrossel-container {
+    display: flex;
+    width: 150%; /* três imagens de 100% cada */
+    animation: scroll 30s infinite linear; /* Animação que faz o carrossel rodar */
+}
+
+/* Cada item de imagem */
+.carrossel-item {
+    width: 100%; /* Cada imagem ocupa 100% do espaço */
+    flex-shrink: 0; /* Impede o item de encolher */
+}
+
+.carrossel-item img {
+    width: 100%; /* Imagem ocupa 100% do item */
+    height: auto;
+}
+
+/* Definindo a animação */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    33.33% {
+        transform: translateX(-100%); /* Atraso de 33% para a transição para a segunda imagem */
+    }
+    66.66% {
+        transform: translateX(-200%); /* Atraso de 66.66% para a transição para a terceira imagem */
+    }
+    100% {
+        transform: translateX(0); /* Volta à posição inicial, criando o loop */
+    }
 }
 
