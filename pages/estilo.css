@@ -25,13 +25,74 @@ img{
     margin-left: 20%;
     border: solid #755000;
 }
-#comprar{
-    text-align: center;
-    height: 50px;
-    width: 50px;
-    background-color: #f789df;
-    border-radius: 100px;
+
+ul li{
+    color: black;
+    margin-right: 40px;
 }
-#comprar h1{
-    align-items: center;
+
+#ultimo{
+    background-color: #012391;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+}
+.uni{
+    height: 100px;
+}
+
+header {
+  display: flex;
+  align-items: center;            
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo {
+  height: 60px;
+  margin-left: 50%;
+  width: 72px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 10%;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu li a:hover {
+  color: #fff;
+  background-color: hsl(239, 100%, 50%);
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+#ultimo a {
+  background-color: #012391;
+  color: #fff;
+  border-radius: 10px;
+  padding: 8px 16px;
+  gap: 15px;
+}
+
+#ultimo a:hover{
+  background-color: hsl(204, 100%, 36%);
+  color: #ffffff;
+  padding: 10px 20px;
+  transition: 0.5s;
 }
