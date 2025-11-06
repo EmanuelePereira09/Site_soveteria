@@ -4,24 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="slide.css">
+    <script src="slide.js" defer></script>
      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
      <style>
         @import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
         </style>
-    <title>Soveteria</title>
+    <title>Creamy Ice Cream</title>
 </head>
 <body>
-    <img src="imagens/logo.png" alt="">
+
+
     <header>
-        
-        <ul>
-            <li>Sobre</li>
-            <li><a href="pages/sabores.html">Sabores</a></li>
-            <li><a href="pages/sabores.html">Nossas lojas</a></li>
-            <li>Nossa história</li>
-            <li id="ultimo">Compre aqui!</li>
-        </li>
+    <img src="imagens/logo.png" alt="Logo da Sorveteria" class="logo">
+    <ul class="menu">
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Sabores</a></li>
+        <li><a href="#">Lojas</a></li>
+        <li><a href="#">História</a></li>
+        <li id="ultimo"><a href="#">Compre aqui!</a></li>
+    </ul>
     </header>
+
+
+
+
+    
+    <section class="slider">
+        <div class="slider-content">
+            <input type="radio" name="unicat" id="radio1">
+            <input type="radio" name="unicat" id="radio2">
+            <input type="radio" name="unicat" id="radio3">
+
+            <div class="slide-box primeiro">
+                <img class="img-desktop" src="imagens/img-slide-1.png" alt="slide 1">
+                <img class="img-mobile" src="imagens/slide-1-mob.png" alt="slide 1 mob">
+            </div>
+
+            <div class="slide-box segundo">
+                <img class="img-desktop" src="imagens/img-slide-2.png" alt="slide 2">
+                <img class="img-mobile" src="imagens/slide-2-mob.png" alt="slide 2 mob">
+            </div>
+
+            <div class="slide-box terceiro">
+                <img class="img-desktop" src="imagens/img-slide-3.png" alt="slide 3">
+                <img class="img-mobile" src="imagens/slide-3-mob.png" alt="slide 3 mob">
+            </div>
+            
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div>
+    </section>
+
+
 
     <main>
         <a class="sabor" href="pages/sabores.html">
@@ -31,20 +75,6 @@
         <h1>sorvete du bom</h1>
     </main>
    <img class="uni" src="imagens/Waffle-Cone-PNG-Image.gif" alt="">
-
-   <div class="carrossel">
-    <div class="carrossel-container">
-        <div class="carrossel-item">
-            <img src="imagens/Sei la.png" alt="Imagem 1">
-        </div>
-        <div class="carrossel-item">
-            <img src="imagens/Sei la.png" alt="Imagem 2">
-        </div>
-        <div class="carrossel-item">
-            <img src="imagens/Sei la.png" alt="Imagem 3">
-        </div>
-    </div>
-</div>
 
 </body>
 </html>
