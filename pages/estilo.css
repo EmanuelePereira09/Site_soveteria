@@ -1,9 +1,8 @@
 
 ul li{
-    color: black;
+    color: hsl(0, 0%, 0%);
     margin-right: 40px;
 }
-
 #ultimo{
     background-color: #012391;
     border-radius: 10px;
@@ -79,11 +78,17 @@ body {
   color: #333;
 }
 
+body{
+  background-color: rgb(250, 246, 240);
+}
 .titulo {
   text-align: center;
   margin-bottom: 2rem;
   font-size: 2.5rem;
-  color: hsl(0, 0%, 0%);
+  color: hsl(226, 100%, 77%);
+  font-family: "Oi", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 

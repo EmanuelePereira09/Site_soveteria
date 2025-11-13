@@ -115,6 +115,7 @@ header {
   display: flex;
   padding: 0;
   padding-top: 10px;
+  justify-content: flex-start;
 }
 ul{
   list-style: none;
@@ -132,7 +133,6 @@ ul{
   top: 100px;
   left: -30 0px;
   font-size: 40px;
-  color: #f70404;
 }
 footer{
   background-color: #012391;
@@ -187,7 +187,9 @@ footer p{
   animation: pular 1.5s ease-in-out 1.5s infinite;
 }
 
-
+.img_historia{
+  margin-left: 10px;
+}
 
 .mobile_menu{
   display: none;
@@ -257,6 +259,7 @@ footer p{
   }
 
   .itens{
+    display: block;
    flex-direction: column;
    align-self: center;
   }
@@ -343,8 +346,13 @@ footer p{
   }
 
   .itens{
+  width: 100vh;
    align-self: center;
    flex-wrap: wrap;
+  }
+  .itens li{
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   .itens img{
     margin-top: 10px;
@@ -362,12 +370,21 @@ footer p{
   .itens img{
     width: 100%;
   }
+  .itens li img{
+    width: 100%;
+    height: auto;
+  }
   .historia02{
     padding: 0;
   }
- 
+  .img_historia{
+    width: 50%;
+    margin-left: 25% ;
+    margin-right: 25%;
+  }
   
 }
+
 .itens {
   display: flex;
   justify-content: center;
