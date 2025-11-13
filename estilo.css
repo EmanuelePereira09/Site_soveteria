@@ -190,8 +190,6 @@ footer p{
   display: none;
 }
 
-
-/* Animação de "dançar" */
 @keyframes pular {
   0%  { transform: translateY(0); }
   50% { transform: translateY(-10px); }
@@ -204,7 +202,7 @@ footer p{
     justify-content: center;
   }
   .img_historia{
-    margin-left: 20%;
+    margin-left: 25%;
   }
   .itens{
     display: block;
@@ -222,14 +220,16 @@ footer p{
     display: block;
     position: relative;
     z-index: 1;
+    padding-left: 50px;
   }
   .drop {
-  background-color: #4CAF50;
+  background-color: #012391;
   color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
+  border-radius: 10px;
   }
   .drop_conteudo {
   display: none;
@@ -249,12 +249,68 @@ footer p{
     background-color: #f1f1f1;
   }
 
-  .mobile_menu:hover .drop_conteudo {
-    display: block;
+  .itens{
+   flex-direction: column;
+   align-self: center;
   }
-
-  .mobile_menu:hover .drop {
-    background-color: #3e8e41;
+  .itens img{
+    margin-top: 10px;
   }
  
+}
+.itens {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.itens {
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente o grupo */
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  list-style: none;
+}
+
+.itens li {
+  position: relative;        /* permite posicionar o texto em cima da imagem */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.itens li img {
+  display: block;              /* ajuste conforme o tamanho que quiser */
+  height: auto;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+
+/* texto centralizado na imagem */
+.itens li p {
+  position: absolute;
+
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0; /* começa invisível */
+  transition: opacity 0.3s ease;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+/* Efeito no hover */
+.itens li:hover img {
+  filter: brightness(40%);   
+  transform: scale(1.05);    
+}
+
+.itens li:hover p {
+  opacity: 1;                
 }
